@@ -28,12 +28,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <RadioButton
-            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="首页"
             android:gravity="center"
             android:button="@null"
-            android:drawableTop="@mipmap/ic_launcher"/>
+            android:drawableTop="@mipmap/yuike_maintab_home_nor"/>
         <RadioButton
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -41,7 +42,7 @@
             android:text="9.9"
             android:gravity="center"
             android:button="@null"
-            android:drawableTop="@mipmap/ic_launcher"/>
+            android:drawableTop="@mipmap/yuike_maintab_9kuai9_nor"/>
         <RadioButton
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -49,7 +50,7 @@
             android:text="分类"
             android:gravity="center"
             android:button="@null"
-            android:drawableTop="@mipmap/ic_launcher"/>
+            android:drawableTop="@mipmap/yuike_maintab_category_nor"/>
         <RadioButton
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -57,7 +58,7 @@
             android:text="购物车"
             android:gravity="center"
             android:button="@null"
-            android:drawableTop="@mipmap/ic_launcher"/>
+            android:drawableTop="@mipmap/yuike_maintab_shopcart_nor"/>
         <RadioButton
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -65,7 +66,7 @@
             android:text="我的"
             android:gravity="center"
             android:button="@null"
-            android:drawableTop="@mipmap/ic_launcher"/>
+            android:drawableTop="@mipmap/yuike_maintab_space_nor"/>
 
     </RadioGroup>
 </LinearLayout>
