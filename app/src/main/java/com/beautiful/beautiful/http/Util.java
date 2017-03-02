@@ -6,4 +6,6 @@ package com.beautiful.beautiful.http;
 
 public class Util {
     static public String base ="";
+    static public String base1 ="";
+
 }
