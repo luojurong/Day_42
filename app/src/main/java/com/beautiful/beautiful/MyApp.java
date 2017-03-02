@@ -14,5 +14,6 @@ public class MyApp extends Application{
         super.onCreate();
 
         x.Ext.init(this);
+
     }
 }
