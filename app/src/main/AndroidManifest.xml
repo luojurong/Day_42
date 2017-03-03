@@ -16,7 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.TypeActivity"></activity>
         <activity
             android:name=".activity.ScrollingActivity2"
             android:label="@string/title_activity_scrolling2"

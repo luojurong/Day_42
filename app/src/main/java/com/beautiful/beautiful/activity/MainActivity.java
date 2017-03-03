@@ -18,6 +18,7 @@ import com.beautiful.beautiful.fragment.FragmentMy;
 import com.beautiful.beautiful.fragment.FragmentNine;
 import com.beautiful.beautiful.fragment.FragmentShop;
 import com.beautiful.beautiful.fragment.FragmentSift;
+import com.beautiful.beautiful.fragment.TypeFragment;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
     private FragmentHome fragmentHome = new FragmentHome();
     private FragmentMy fragmentMy = new FragmentMy();
-    private FragmentNine fragmentNine = new FragmentNine();
+    private TypeFragment fragment3 = new TypeFragment();
     private FragmentShop fragmentShop = new FragmentShop();
     private FragmentSift fragmentSift = new FragmentSift();
 
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * radiobutton
+     * radiobutton 点击时 修改碎片
      */
     @Event(type = RadioGroup.OnCheckedChangeListener.class, value = R.id.rg)
     private void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
@@ -97,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 checkPosition = 1;
 
                 transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragmentLayout_home, fragmentNine).commit();
+                transaction.replace(R.id.fragmentLayout_home, fragmentSift).commit();
                 break;
             case R.id.btn3:
                 rb = (RadioButton) group.getChildAt(2);
@@ -107,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                 checkPosition = 2;
 
                 transaction = manager.beginTransaction();
-                transaction.replace(R.id.fragmentLayout_home, fragmentSift).commit();
+                transaction.replace(R.id.fragmentLayout_home, fragment3).commit();
                 break;
             case R.id.btn4:
                 rb = (RadioButton) group.getChildAt(3);
