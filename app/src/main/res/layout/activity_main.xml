@@ -4,14 +4,68 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.beautiful.beautiful.activity.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <FrameLayout
+        android:id="@+id/fragmentLayout_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rg"
+        >
+        <RadioButton
+            android:id="@+id/btn1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@mipmap/yuike_maintab_home_nor"/>
+        <RadioButton
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="9.9"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@mipmap/yuike_maintab_9kuai9_nor"/>
+        <RadioButton
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="分类"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@mipmap/yuike_maintab_category_nor"/>
+        <RadioButton
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="购物车"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@mipmap/yuike_maintab_shopcart_nor"/>
+        <RadioButton
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="我的"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@mipmap/yuike_maintab_space_nor"/>
+
+    </RadioGroup>
 </RelativeLayout>
