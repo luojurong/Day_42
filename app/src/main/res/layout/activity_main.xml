@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -7,65 +7,65 @@
     android:orientation="vertical"
     tools:context="com.beautiful.beautiful.activity.MainActivity">
 
-    <android.support.v7.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ccc">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="button1"
-            android:background="#ccc"/>
-    </android.support.v7.widget.Toolbar>
 
     <FrameLayout
-        android:id="@+id/replace_main"
+        android:id="@+id/fragmentLayout_home"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_height="match_parent"></FrameLayout>
+
+
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rg"
+        >
         <RadioButton
-            android:layout_width="wrap_content"
+            android:id="@+id/btn1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="首页"
             android:gravity="center"
             android:button="@null"
-            android:drawableTop="@mipmap/ic_launcher"/>
+            android:drawableTop="@mipmap/yuike_maintab_home_nor"/>
         <RadioButton
+            android:id="@+id/btn2"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="9.9"
             android:gravity="center"
             android:button="@null"
-            android:drawableTop="@mipmap/ic_launcher"/>
+            android:drawableTop="@mipmap/yuike_maintab_9kuai9_nor"/>
         <RadioButton
+            android:id="@+id/btn3"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="分类"
             android:gravity="center"
             android:button="@null"
-            android:drawableTop="@mipmap/ic_launcher"/>
+            android:drawableTop="@mipmap/yuike_maintab_category_nor"/>
         <RadioButton
+            android:id="@+id/btn4"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="购物车"
             android:gravity="center"
             android:button="@null"
-            android:drawableTop="@mipmap/ic_launcher"/>
+            android:drawableTop="@mipmap/yuike_maintab_shopcart_nor"/>
         <RadioButton
+            android:id="@+id/btn5"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="我的"
             android:gravity="center"
             android:button="@null"
-            android:drawableTop="@mipmap/ic_launcher"/>
+            android:drawableTop="@mipmap/yuike_maintab_space_nor"/>
 
     </RadioGroup>
-</LinearLayout>
+</RelativeLayout>
